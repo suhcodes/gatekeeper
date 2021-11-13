@@ -13,7 +13,7 @@ var TRUNCATE_THRESHOLD = 10,
 // Load config defaults from JSON file.
 // Environment variables override defaults.
 function loadConfig() {
-  var config = JSON.parse(fs.readFileSync(__dirname+ '/config.json', 'utf-8'));
+  var config = fs.readFileSync(__dirname+ '/config.js', 'utf-8');
   log('Configuration');
   for (var i in config) {
     var configItem = process.env[i.toUpperCase()] || config[i];
