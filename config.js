@@ -1,4 +1,4 @@
-{
+module.exports = {
   "oauth_client_id": process.env.GITHUB_APPLICATION_CLIENT_ID,
   "oauth_client_secret": process.env.GITHUB_APPLICATION_CLIENT_SECRET,
   "oauth_host": "github.com",
