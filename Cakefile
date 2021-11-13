@@ -4,7 +4,7 @@ fs            = require 'fs'
 # Config
 # ----------
 
-config = JSON.parse(fs.readFileSync(__dirname+ '/config.js', 'utf-8'))
+config = fs.readFileSync(__dirname+ '/config.js', 'utf-8')
 
 # ANSI terminal colors.
 # ----------
